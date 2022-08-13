@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    
+    
+}
+body{
+  font-size: 16px;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(120, 92, 80);
+  z-index: 1000;
+  position: fixed;
+  padding: 0px 40px;
+  
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: black;
+  width: 20%;
+  
+}
+.services{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.services a{
+  padding-right: 1.6rem;
+  color: black;
+  font-size: 1.5rem;
+}
+.access{
+  display: flex;
+  align-items: center;
+}
+.cart a{
+  padding-right: 2rem;
+  color: darkgrey;
+  font-size: 1.3rem;
+  
+}
+.sign-in a{
+  color:black;
+  background-color: wheat;
+  padding: 0.5rem;
+  border-radius: 10px;
+  
+} 
+  /*---------main------*/
+   
+  
+  .main{
+    width: 100%;
+    height: 48rem;
+    background-color: darkgrey;
+    display: flex;
+  }
+  .needs {
+    margin: auto;
+    text-align: center;
+  }
+  .needs h2{
+    font-size: 4rem
+  }
+  .needs :nth-child(2){
+    font-size: 3rem;
+    padding-top: 1.2rem;
+  }
+  .needs :nth-child(3){
+    font-size: 2rem;
+    padding-top: 1.2rem;
+  }
+
+/*------gadjects-----*/
+
+    
+    .buy{
+      width: 100%;
+      height: 40rem;
+      background-color:darkgray;
+    }
+    .buytitle h2{
+      font-size: 2.7rem;
+      text-align: center;
+      margin-bottom: 3.5rem;
+
+    }
+    .content{
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      
+      
+      
+    }
+    .cards{
+      height: 22rem;
+      width: 22rem;
+      background-color:rgb(120, 92, 80) ;
+      border-radius: 10px;
+      transition: 0.7s;
+    }
+    
+    .cards img{
+      width: 20rem;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
+     
+    }
+    
+    .mac h3{
+      text-align: center;
+      font-size: 1.7rem;
+      margin-bottom: 0.8rem;
+    }
+    .price p{
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+    .buy-it a{
+      color: black;
+      margin-left: 40%;
+      background-color: antiquewhite;
+      padding: 0.4rem;
+      border-radius: 7px;
+      transition: 0.7s;
+    }
+    .new p{
+      text-align: center;
+      margin-top: 0.8rem;
+      color: red;
+    }
+    .buy-it a :hover{
+      color: brown;
+    }
+    .cards:hover{
+      transform: scale(1.1);
+    } 
+      /*-------inventions----*/
+    
+    .new-inventions{
+      width: 100%;
+      height: 50rem;
+      background-color: darkgrey;
+    }
+    .inventions-title h2{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 2.7rem;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 45rem;
+      background-color: darkgray;
+    }
+    .flex-1 h3{
+      font-size: 2rem;
+      text-align: center;
+    }
+    .flex-1 img{
+      width: 60%;
+      margin-top: 2rem;
+      margin-left: 9rem;
+      border-radius: 10px;
+      
+    }
+    .cpu img{
+     width: 80%;
+     border-radius: 10px;
+    
+    }
+    .gpu img{
+      width: 80%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .flex-1{
+      width: 50%;
+    }
+    .flex-2{
+      width: 50%;
+      align-items: center;
+      margin-left: 5rem;
+      
+      
+    }
+     .flex-1 p{
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 2rem;
+     }
+  
+      /*-----fouter----*/
+     
+      .footer{
+        width: 100%;
+        height: 6rem;
+        background-color:rgb(120, 92, 80);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem;
+
+      }
+        .footer-title{
+          font-size: 1.2rem;
+          
+        }
+        .social-icons a{
+         color: darkgrey;
+         font-size: 1.6rem;
+         padding-right: 1rem;
+        }
+
+        
+
+        /*------for smaller devices------*/
+
+         
+        @media (max-width:700px){
+
+          
+          /*-----header----*/
+          header{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            width: 100%;
+            height: 4rem;
+            padding: 0px;
+            
+          }
+          .title{
+            display: none;
+            
+          }
+          .services{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .services a{
+             padding-right: 1rem;
+             color: black;
+             font-size: 1rem;
+           }
+           .access{
+             display: flex;
+             align-items: center;
+           }
+           .cart a{
+             padding-right: 1rem;
+             color: darkgrey;
+             font-size: 1.3rem;
+             
+           }
+           .sign-in a{
+             padding: 0.5rem;
+           } 
+          /*-----main---*/
+
+          .needs {
+            margin: auto;
+            text-align: center;
+          }
+          .needs h2{
+            font-size: 2.5rem;
+          }
+          .needs :nth-child(2){
+            font-size: 1.5rem;
+            padding-top: 1.2rem;
+          }
+          .needs :nth-child(3){
+            font-size: 1rem;
+            padding-top: 1.2rem;
+          }
+            /*----gadjets---*/
+
+            .buy{
+              width: 100%;
+              height: 85rem;
+              
+            }
+
+            .content{
+              display: flex;
+              flex-direction: column;
+              justify-items: center;
+              flex-wrap: wrap;
+            }
+
+            .buytitle h2{
+              font-size: 1.9rem;
+            }
+
+            .cards{
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 2rem;
+             
+            }
+            
+            /*------inventions----*/
+
+            .new-inventions{
+              width: 100%;
+              height: 70rem;
+              position: relative;
+            }
+
+            .container{
+              display:contents;
+            
+
+              flex-wrap: wrap;
+              width: 100%;
+            }
+
+            .inventions-title h2{
+              text-align: center;
+              font-size: 1.9rem;
+              margin-bottom: 2.7rem;
+              
+              }
+              .flex-1 h3{
+                font-size: 1.4rem;
+                margin-left: auto;
+                margin-right: auto;
+              }
+
+              .flex-1 img{
+                width: 100%;
+                margin-top: 2rem;
+                margin-left: 0rem;
+                border-radius: 10px;
+                
+              }
+              .cpu img{
+               width: 80%;
+               border-radius: 10px;
+              
+              }
+              .gpu img{
+                width: 80%;
+                border-radius: 10px;
+                margin-top: 1rem;
+                
+              }
+              .flex-1{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2rem;
+
+            }
+              .flex-2{
+                width: 85%;
+                padding-right: 1rem;
+                margin-bottom: 2rem;
+                
+                
+              }
+               .flex-1 p{
+                font-size: 1.5rem;
+                text-align: center;
+                margin-top: 2rem;
+               }
+
+
+              /*-----fouter----*/
+     
+              .footer{
+                width: 100%;
+                height: 4rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 0.3rem;
+                
+        
+              }
+                .footer-title{
+                  font-size: 1rem;
+                  padding-right: 0.2rem;
+                  
+                }
+                .social-icons a{
+                 color: darkgrey;
+                 font-size: 1.3rem;
+                 padding-right: 0.2rem;
+                }
+      
+        }
+
+
+
+
+
